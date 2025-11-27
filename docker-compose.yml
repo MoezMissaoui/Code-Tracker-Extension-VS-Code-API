@@ -9,7 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: root_password
       MYSQL_DATABASE: code_tracker
     ports:
-      - "6549:3306"
+      - "127.0.0.1:6549:3306"
     volumes:
       - db_data:/var/lib/mysql
 
@@ -26,7 +26,7 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: root_password
     ports:
-      - "5870:8000"
+      - "127.0.0.1:5870:8000"
     volumes:
       - ./logs:/app/logs
 
@@ -39,7 +39,7 @@ services:
     environment:
       PMA_HOST: db
     ports:
-      - "6548:80"
+      - "127.0.0.1:6548:80"
 
 volumes:
   db_data:
