@@ -107,6 +107,7 @@ def create_tracked_file(
             .filter(
                 TrackedFile.fileName == payload.fileName,
                 TrackedFile.filePath == payload.filePath,
+                TrackedFile.key == api_key,
                 TrackedFile.timestamp.between(window_start, window_end),
             )
             .order_by(TrackedFile.timestamp.desc())
