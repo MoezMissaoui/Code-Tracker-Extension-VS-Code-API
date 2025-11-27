@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Environment
+.venv/
+venv/
+env/
+.env
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+
+# Logs
+logs/*.log
+
+# Python tooling
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage / testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+*.log
+
+
